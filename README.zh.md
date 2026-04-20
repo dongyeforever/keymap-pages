@@ -1,5 +1,7 @@
 # keymap-pages
 
+[English Docs](./README.md)
+
 常用软件快捷键集合。
 
 ## 什么是 keymap-pages？

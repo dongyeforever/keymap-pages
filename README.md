@@ -1,5 +1,7 @@
 # keymap-pages
 
+[中文文档](./README.zh.md)
+
 Collaborative keyboard shortcuts for common software.
 
 ## What is keymap-pages?
