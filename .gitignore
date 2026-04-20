@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Index files (can be regenerated)
+index.json
+index.zh.json
+
+# Language config
+.keymap
