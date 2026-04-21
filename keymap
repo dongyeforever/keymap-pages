@@ -1,7 +1,0 @@
-#!/bin/bash
-# Simple launcher for keymap CLI
-
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-CLI="$SCRIPT_DIR/clients/cli/keymap_cli.py"
-
-exec python3 "$CLI" "$@"
