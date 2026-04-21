@@ -1,0 +1,18 @@
+.lang-toggle {
+  float: right;
+  margin-bottom: 1rem;
+}
+
+.lang-toggle a {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 4px;
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.lang-toggle a:hover {
+  color: var(--vp-c-brand);
+  border-color: var(--vp-c-brand);
+}

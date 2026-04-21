@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as r}from"./chunks/framework.CZWuAbHz.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{"layout":"redirect","redirect":"/zh/"},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),a={name:"index.md"};function n(o,c,d,i,s,p){return t(),r("div")}const f=e(a,[["render",n]]);export{m as __pageData,f as default};

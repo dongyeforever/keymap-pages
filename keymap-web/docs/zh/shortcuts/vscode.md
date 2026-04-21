@@ -1,3 +1,7 @@
+<!---
+head:
+  sidebar: false
+--->
 # VS Code
 
 > Visual Studio Code - 跨平台代码编辑器

@@ -3,26 +3,19 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
   title: '快捷键集合',
   description: '常用软件键盘快捷键集合',
+  base: '/keymap-pages/',
   lang: 'zh-CN',
-  locales: {
-    root: {
-      label: '中文',
-      lang: 'zh-CN',
-      title: '快捷键集合',
-      description: '常用软件键盘快捷键集合',
-      link: '/zh/'
-    },
-    en: {
-      label: 'English',
-      lang: 'en-US',
-      title: 'Keymap Collection',
-      description: 'Collaborative keyboard shortcuts for common software',
-      link: '/en/'
-    }
-  },
   themeConfig: {
+    logoLink: '/keymap-pages/zh/',
     nav: [
-      { text: '首页', link: '/zh/' }
+      { text: '首页', link: '/zh/' },
+      {
+        text: '语言',
+        items: [
+          { text: '中文', link: '/zh/' },
+          { text: 'English', link: '/en/' }
+        ]
+      }
     ],
     sidebar: {
       '/zh/': [
