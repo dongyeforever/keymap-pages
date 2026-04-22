@@ -17,12 +17,14 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        working-directory: ./keymap-web
-        run: npm install
+        run: |
+          cd keymap-web
+          npm install
 
       - name: Build
-        working-directory: ./keymap-web
-        run: npm run docs:build
+        run: |
+          cd keymap-web
+          npm run docs:build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
