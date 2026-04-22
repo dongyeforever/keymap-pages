@@ -4,7 +4,7 @@ import { computed } from 'vue'
 
 const { page } = useData()
 const isEn = computed(() => page.value.relativePath.startsWith('en/'))
-const base = '/keymap-pages'
+const base = ''
 
 const categories = [
   {
