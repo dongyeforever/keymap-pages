@@ -39,4 +39,5 @@ jobs:
           publish_dir: keymap-web/docs/.vitepress/dist
           publish_branch: gh-pages
           user_name: github-actions[bot]
-          user_email: github-actions[bot]@users.noreply.github.com
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          allow_empty_commit: true
