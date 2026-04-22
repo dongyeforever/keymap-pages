@@ -9,16 +9,11 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -35,8 +30,13 @@ jobs:
           cd keymap-web
           npm run docs:build
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: keymap-web/docs/.vitepress/dist
+          path: keymap-web/docs/.vitepress/dist
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
