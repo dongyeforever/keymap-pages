@@ -3,10 +3,10 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
   title: '快捷键集合',
   description: '常用软件键盘快捷键集合',
-  base: '/',
+  base: '/keymap-pages/',
   lang: 'zh-CN',
   themeConfig: {
-    logoLink: '/zh/',
+    logoLink: '/keymap-pages/zh/',
     nav: [
       { text: '首页', link: '/zh/' },
       {
