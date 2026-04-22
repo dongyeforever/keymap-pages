@@ -17,7 +17,7 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: cd keymap-web && npm ci
+        run: cd keymap-web && npm install
 
       - name: Build
         run: cd keymap-web && npm run docs:build
